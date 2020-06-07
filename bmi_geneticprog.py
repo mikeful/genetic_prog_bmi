@@ -16,7 +16,7 @@ if __name__ == '__main__':
 
     data = pandas.read_csv(filename, sep=';')
 
-    def evalChecksum(individual, data):
+    def evalFitness(individual, data):
         func = toolbox.compile(expr=individual)
 
         score = 0
@@ -89,7 +89,7 @@ if __name__ == '__main__':
     toolbox.register("population", tools.initRepeat, list, toolbox.individual)
     toolbox.register("compile", gp.compile, pset=pset)
 
-    toolbox.register("evaluate", evalChecksum, data=data)
+    toolbox.register("evaluate", evalFitness, data=data)
     toolbox.register("select", tools.selTournament, tournsize=10)
     toolbox.register("mate", gp.cxOnePoint)
     toolbox.register("expr_mut", gp.genFull, min_=0, max_=2)
