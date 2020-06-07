@@ -51,3 +51,4 @@ Correct: 10000 / 10000
  * Figure out why DEAP multiprocessing is not working, speeds up training
  * Test with DEAP typed primitives/functions
  * Research and test better fitness functions
+ * Find way to generate loops and timeout handling in fitness evaluation
