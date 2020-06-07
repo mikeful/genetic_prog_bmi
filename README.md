@@ -2,7 +2,7 @@
 
 ## General info
 
-I experimented with genetic programming part of [DEAP](https://github.com/DEAP/deap) library to figure out the tricky parts of process. Goal was to train and generate function to calculate body mass index from example data. Learned: function selection and validation checker has huge impact on how quickly the algorithm finds correct and compact solution for even simple function like BMI.
+I experimented with genetic programming part of [DEAP](https://github.com/DEAP/deap) library to figure out the tricky parts of process. Goal was to train and generate function to calculate body mass index from example data. Learned: available function selection and validation/fitenss checker has huge impact on how quickly the algorithm finds correct and compact solution for even simple function like BMI.
 
 ## Usage
 
